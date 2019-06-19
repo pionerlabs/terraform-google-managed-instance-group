@@ -66,6 +66,7 @@ variable "access_config" {
   type        = "list"
 
   default = [
+        {},
   ]
 }
 
