@@ -17,7 +17,7 @@
 resource "google_compute_instance_template" "default" {
   count        = "${var.module_enabled ? 1 : 0}"
   project      = "${var.project}"
-  name_prefix  = "default-"
+  name_prefix  = "nat-"
   machine_type = "${var.machine_type}"
 
   region = "${var.region}"

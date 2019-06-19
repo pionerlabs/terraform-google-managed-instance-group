@@ -1,5 +1,3 @@
-/*
- * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -68,7 +66,6 @@ variable "access_config" {
   type        = "list"
 
   default = [
-    {},
   ]
 }
 
@@ -296,5 +293,5 @@ variable "hc_path" {
 
 variable "ssh_fw_rule" {
   description = "Whether or not the SSH Firewall Rule should be created"
-  default     = true
+  default     = false
 }
